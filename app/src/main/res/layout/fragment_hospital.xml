@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Hospital">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upperLinear"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/refresh"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/refresh" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/update"
+                        android:layout_width="129dp"
+                        android:layout_height="45dp"
+                        android:hint="UPDATE"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/hNameInEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hospital Name In Eng"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/hNameInBangla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hospital Name In Bangla"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/branchName"
+                    android:hint="Branch Name"
+                    android:gravity="center"
+                    android:textSize="14dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/districtName"
+                    android:hint="District Name"
+                    android:gravity="center"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/searchArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search an area"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/hAddressInEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hospital Address In Eng"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/hAddressInBang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hospital Address In Bangla"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/locationFind"
+                    android:src="@drawable/add_location"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latlong"
+                    android:layout_weight="1"
+                    android:hint="latlong"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/camera"
+                    android:src="@drawable/camera"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cameraImageShow"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctors"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+</ScrollView>

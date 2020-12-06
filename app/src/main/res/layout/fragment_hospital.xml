@@ -161,11 +161,26 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Doctors"
+                android:text="Add Doctors"
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/doctorInfo"
+                android:hint="Doctor Name"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/addMoreDr"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Add More"
+                android:layout_marginTop="10dp"/>
 
             </LinearLayout>
         </FrameLayout>

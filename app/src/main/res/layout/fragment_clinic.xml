@@ -1,15 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Clinic">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Clinic" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upperLinear"
+            android:orientation="horizontal">
 
-</FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/refresh"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/refresh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:hint="UPDATE"
+                    android:textColorHint="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/clinicNameBang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clinic Name In Bangla"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/clinicNameEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clinic Name In English"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search an area"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/clinicAddressBangla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clinic Address In Bangla"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/clinicAddressEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clinic Address In English"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <EditText
+                android:id="@+id/reciptionNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reciption Phone"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/locationFind"
+                    android:src="@drawable/add_location"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latlong"
+                    android:layout_weight="1"
+                    android:hint="latlong"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Doctors"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/doctorInfo"
+                android:hint="Doctor Name"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/addMoreDr"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Add More"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Note"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>
